@@ -85,7 +85,7 @@ app.get("/tikrandom", async (req, res) => {
     return res.json({
       url: data.data.play,
       desc: random.desc,
-      title: data.data.title || "TikTok clip"
+      title: data.data.title || "Random Edit"
     });
 
   } catch (err) {
@@ -95,7 +95,7 @@ app.get("/tikrandom", async (req, res) => {
 });
 
 app.get("/", (req, res) => {
-  res.send("🎥 Welcome to Female TikTok Random Video API with no watermark (Tikwm)!");
+  res.send("🎥 Welcome to Alight Motion TikTok Random Video Edit API with no watermark (Tikwm)!");
 });
 
 app.listen(PORT, () => {
